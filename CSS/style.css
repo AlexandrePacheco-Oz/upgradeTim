@@ -145,9 +145,9 @@ form .input-grupo button:hover{
     margin-top: 15vh; 
 } 
 .mod{
- position: static;
- margin-top: 29%;
- margin-left: 62%;
+ position:fixed;
+ margin-top: 75vh;
+ margin-left: 250px;
 }
 .mod0{
     position: absolute;
