@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Veste/CSS/style.css">
+    <link rel="shortcut icon" href="../Veste/Img/regular_69beadfdb693fc9d8e8cf6c49e3242c1.jpg" type="image/x-icon">
+    <title>Formulário de Atendimento Veste</title>
+</head>
+<body>
+   <div class="container">
+        <div class="img-container">
+          
+            <div class="mode2 ">
+                <p id="resposta"></p>
+            </div>
+            <button type="button" class="button2 mod0" onclick="copiar('resposta');">Copy</button>
+
+
+
+        </div>
+        <div class="container-box">
+            <h2>Abrir chamado</h2>
+            <p>Abrir chamados da Veste<a href="#"> </a></p>
+            <form action="#">
+                <div class="input-grupo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite o nome do usuário..." required>
+                </div>
+
+
+                <div class="input-grupo w50">
+                    <label for="Telefone">Telefone</label>
+                    <input type="tel" id="Telefone" placeholder="Digite o Telefone do usuário..." required>
+
+                </div>
+               
+
+                <div class="input-grupo w50">
+                    <label for="Cervello">Nome da Loja</label>
+                    <input type="text" id="cervelo" placeholder="Digite o numero do Cervello..." >
+
+                </div>
+                <div class="input-grupo w50">
+                    <label for="Patrimonio">Código da Filial</label>
+                    <input type="text" id="patrimonio" placeholder="Código da Filial..." >
+
+                </div>
+                <div class="input-grupo w50">
+                    <label for="ChamadoTim">Numero do chamado</label>
+                    <input type="text" id="chamadoTim" placeholder="Digite o Numero do chamado..." required>
+
+                </div>
+                <div class="input-grupo">
+                    <label for="Local">Descrição</label>
+                    <input type="text" id="Descricao" placeholder="Digite a Descrição do Chamado..." required>
+
+                </div>
+        
+                <div class="input-grupo">
+                    <button type="submit" onclick="chamado();">Seguir</button>
+                    <button type="reset" onclick="reset();">Limpar</button>
+                </div>
+            </form>
+
+        </div>
+        <script src="./index.js"></script>
+        <script src="https://kit.fontawesome.com/25a9e98110.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+        <script>$('#Telefone').mask('(00) 00000-0000');</script>
+    </div>
+</body>
+</html>
