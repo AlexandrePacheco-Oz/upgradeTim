@@ -70,6 +70,7 @@ const createSelect = (value) => {
     <option value="pendente">pendente</option>
     <option value="Pendente Usuário">Pendente Usuário</option>
     <option value="em andamento">em andamento</option>
+    <option value="Solicitar Tecnico">Solicitar Tecnico</option>
     <option value="concluída">concluída</option>
     <option value="Aguardando Transportadora">Aguardando Transportadora</option>
     <option value="Tecnico no Local">Tecnico no Local</option>
