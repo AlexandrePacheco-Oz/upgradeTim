@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Formulário de Atendimento</title>
+</head>
+<body>
+   <div class="container">
+        <div class="img-container">
+          
+            <div class="mode2 ">
+                <p id="resposta"></p>
+            </div>
+            <button type="button" class="button2 mod0" onclick="copiar('resposta');">Copy</button>
+
+
+            <div class="mode3">
+    
+                <p id="resposta2"></p>
+               
+               
+            </div>
+            <button type="button" class="button2 mod" onclick="copiar('resposta2')">Copy</button>
+
+
+
+        </div>
+        <div class="container-box">
+            <h2>Abrir chamado</h2>
+            <p>Abrir chamados de <a href="./REQ.html">REQ </a></p>
+            <form action="#">
+                <div class="input-grupo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite o nome do usuário..." required>
+                </div>
+
+                <div class="input-grupo w50">
+                    <label for="Local">Local</label>
+                    <input type="text" id="local" placeholder="Digite o Local..." required>
+
+                </div>
+
+                <div class="input-grupo w50">
+                    <label for="Telefone">Telefone</label>
+                    <input type="tel" id="Telefone" placeholder="Digite o Telefone do usuário..." required>
+
+                </div>
+                <div class="input-grupo">
+                    <label for="Local">Descrição</label>
+                    <input type="text" id="Descricao" placeholder="Digite a Descrição do Chamado..." required>
+
+                </div>
+
+                <div class="input-grupo w50">
+                    <label for="Cervello">Cervello</label>
+                    <input type="text" id="cervelo" placeholder="Digite o numero do Cervello..." >
+
+                </div>
+                <div class="input-grupo w50">
+                    <label for="Patrimonio">Patrimônio</label>
+                    <input type="text" id="patrimonio" placeholder="Digite o Patrimônio..." >
+
+                </div>
+                <div class="input-grupo w50">
+                    <label for="ChamadoTim">Chamado Tim</label>
+                    <input type="text" id="chamadoTim" placeholder="Digite o Chamado Tim..." required>
+
+                </div>
+              
+                <div class="input-grupo w50 time">
+                    <label for="dataHora">Data e Hora</label>
+                    <input type="date" id="data" class="data">
+                    <input type="time" id="hora" class="time">
+
+                </div>
+        
+                <div class="input-grupo">
+                    <button type="submit" onclick="chamado();">Seguir</button>
+                    <button type="reset" onclick="reset();">Limpar</button>
+                </div>
+            </form>
+
+        </div>
+        <script src="./index.js"></script>
+        <script src="https://kit.fontawesome.com/25a9e98110.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+        <script>$('#Telefone').mask('(00) 00000-0000');</script>
+    </div>
+</body>
+</html>
