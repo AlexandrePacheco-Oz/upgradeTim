@@ -69,6 +69,8 @@ const createSelect = (value) => {
   const options = `
     <option value="pendente">pendente</option>
     <option value="Pendente Usuário">Pendente Usuário</option>
+    <option value="Segunda Tentativa de Contato">Segunda Tentativa de Contato</option>
+    <option value="Terceira Tentativa de Contato">Terceira Tentativa de Contato</option>
     <option value="em andamento">em andamento</option>
     <option value="Solicitar tecnico">Solicitar tecnico</option>
     <option value="concluída">concluída</option>
