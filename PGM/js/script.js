@@ -3,7 +3,7 @@ const addForm = document.querySelector('.add-form');
 const inputTask = document.querySelector('.input-task');
 
 const fetchTasks = async () => {
-  const response = await fetch('https://controlbackend-production.up.railway.app/tasks')
+  const response = await fetch('http://35.173.247.188:3000/tasks')
   const tasks = await response.json()
   return tasks;
 }
@@ -13,7 +13,7 @@ const addTask = async (event) => {
 
   const task = { title: inputTask.value, created_at: new Date(), updated_at: ' ' };
 
-  await fetch('https://controlbackend-production.up.railway.app/tasks', {
+  await fetch('http://35.173.247.188:3000/tasks', {
     method: 'post',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(task),
@@ -25,7 +25,7 @@ const addTask = async (event) => {
 }
 
 const deleteTask = async (id) => {
-  await fetch(`https://controlbackend-production.up.railway.app/tasks/${id}`, {
+  await fetch(`http://35.173.247.188:3000/tasks/${id}`, {
     method: 'delete',
   });
 
@@ -34,7 +34,7 @@ const deleteTask = async (id) => {
 
 const updateTask = async ({ id, title, status, updated_at }) => {
 
-  await fetch(`https://controlbackend-production.up.railway.app/tasks/${id}`, {
+  await fetch(`http://35.173.247.188:3000/tasks/${id}`, {
     method: 'put',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ title, status, updated_at, created_at: new Date() }),
