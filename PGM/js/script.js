@@ -76,9 +76,12 @@ const createSelect = (value) => {
     <option value="Tecnico no Local">Tecnico no Local</option>
     <option value="Tecnico a Caminho">Tecnico a Caminho</option>
     <option value="Solicitar tecnico">Solicitar tecnico</option>
+    <option value="Soliictar troca">Solicitar troca</option>
     <option value="Solicitado Compra">Tecnico solicitado</option>
     <option value="Solicitado Troca">Solicitado Troca</option>
+    <option value="Solitado Compra">Solitado Compra</option>
     <option value="Aguardando RAT">Aguardando RAT</option>
+    <option value="Correção no Totvs">Correção no Totvs</option>
   `;
 
   const select = createElement('select', '', options);
