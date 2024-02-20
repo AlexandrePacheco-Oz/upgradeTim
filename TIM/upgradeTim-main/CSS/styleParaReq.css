@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+   background-image: url(../Img/Backdrop\ -\ Arklok\ 4.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   min-height: 100vh;
+}
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+.time{
+    width: 40%;
+    margin-top: 10px;
+}
+
+.container{
+    display: flex;
+    width: 930px;
+}
+.img-container{
+   background-color: rgba(255, 255, 255, 0.5);
+   width: 50%; 
+   display: flex;
+   align-items: center;
+   transform: translate( 100%, -1% );
+   padding: 20px;
+   border-radius: 0 20px 20px 0; 
+}
+.img-container img{
+width: 180%;
+
+
+
+}
+
+.container-box{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter:blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    transform: translate( -100%, -1% );
+    border-radius: 20px 0 0 20px
+}
+.container-box h2{
+    font-size: 30px;
+}
+.container-box p{
+    font-weight: bold;
+    color: #3D3D3D;
+}
+.container-box p a{
+    color: blue;
+    text-decoration: none;
+}
+.container-box form{
+ margin: 20px 0;
+}
+form .input-grupo{
+    margin-bottom: 15px;
+}
+form .input-grupo label{
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+form .input-grupo input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+
+
+form .input-grupo input:focus{
+    border-color: #3D3D3D;
+}
+form .input-grupo button{
+    
+    width: 44%;
+    position:static;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+    
+}
+form .input-grupo button:hover{
+    background-color: black;
+    color: white;
+    
+}
+.button2{
+    width: 45%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.747);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: black;
+    cursor: pointer;
+}
+.button2:hover{
+    color: white;
+    background-color: black;
+}
+.mode3{
+
+    font-size: 14px;
+    position:absolute;
+    width: 100%;
+
+    bottom: 95vh;
+}
+.mod{
+    position: fixed;
+    margin-top: 10vh;
+    margin-left: 25vh;
+}
+

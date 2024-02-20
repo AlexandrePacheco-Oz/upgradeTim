@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styleParaReq.css">
+    <title>Formulário de REQ</title>
+</head>
+<body>
+   <div class="container">
+        <div class="img-container">
+          
+
+            <div class="mode3">
+    
+                <p id="resposta2"></p>
+               
+            </div>
+            <button type="button" class="button2 mod" onclick="baixarArquivo()">Salvar</button>
+          
+
+
+        </div>
+        <div class="container-box">
+            <p>Abertura de<a href="./index.html"> Chamado</a></p>
+            <form action="#">
+                <div class="input-grupo">
+                    <label for="tipoDoEquipamento">Tipo do equipamento</label>
+                    <input type="text" id="tipoDoEquipamento" placeholder="Digite o nome do usuário..." required>
+                </div>
+                <div class="input-grupo">
+                    <label for="nomeAnalista">Nome do Analista</label>
+                    <input type="text" id="nomeAnalista" placeholder="Digite o nome do Analista..." required>
+                </div>
+                <div class="input-grupo">
+                    <label for="nome">Nome do responsável pelo recebimento</label>
+                    <input type="text" id="nome" placeholder="Digite o nome do usuário..." required>
+                </div>
+
+                <div class="input-grupo">
+                    <label for="local">Endereço completo para envio da peça: </label>
+                    <input type="text" id="local" placeholder="Digite o Local..." required>
+
+                </div>
+
+                <div class="input-grupo w50">
+                    <label for="hostname">Hostname:</label>
+                    <input type="text" id="hostname" placeholder="Digite o Hostname..." required>
+
+                </div>
+                <div class="input-grupo w50">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" id="modelo" placeholder="Digite o Modelo..." required>
+
+                </div>
+
+                <div class="input-grupo w50">
+                    <label for="serial">Serial</label>
+                    <input type="text" id="serial" placeholder="Digite o Serial..." required>
+
+                </div>
+                <div class="input-grupo w50">
+                    <label for="chamadoTim">Chamado Tim</label>
+                    <input type="text" id="chamadoTim" placeholder="Digite o Chamado Tim..." required>
+
+                </div>
+                <div class="input-grupo">
+                    <label for="descricao">Causa do Defeito (Descreva): </label>
+                    <input type="text" id="descricao" placeholder="Digite a Causa do Defeito..." required>
+
+                </div>
+
+                <div class="input-grupo">
+                    <label for="nomeDaPeca">Nome da peça / periférico </label>
+                    <input type="text" id="nomeDaPeca" placeholder="Digite o Nome da peça..." required>
+
+                </div>
+
+              <div class="auto-preencher"> 
+                  <div class="input-grupo w50 ">
+                     <label for="equipamentoOperacional">Equipamento operacional ?</label>
+                     <input type="text" id="equipamentoOperacional" placeholder="Digite a Causa do Defeito..." required value="Sim">
+
+                    </div>
+ 
+                    <div class="input-grupo w50 ">
+                      <label for="equipamentoDeLoja">Equipamento de Loja ?</label>
+                      <input type="text" id="equipamentoDeLoja" placeholder="Digite a Causa do Defeito..." required value="Não">
+
+                    </div>
+
+                   <div class="input-grupo w50 ">
+                      <label for="usoInadequado">Uso inadequado ?</label>
+                      <input type="text" id="usoInadequado" placeholder="Digite a Causa do Defeito..." required value="Não">
+ 
+                    </div>
+
+                   <div class="input-grupo w50 ">
+                      <label for="desgasteNatural">Desgaste natural ?</label>
+                      <input type="text" id="desgasteNatural" placeholder="Digite a Causa do Defeito..." required value="Sim">
+
+                    </div>
+                  <div class="input-grupo w50 ">
+                     <label for="sofreuAlgumTipoDeImpacto">Sofreu algum tipo de impacto ?</label>
+                     <input type="text" id="sofreuAlgumTipoDeImpacto" placeholder="Digite a Causa do Defeito..." required value="Não">
+
+                    </div>
+                   <div class="input-grupo w50">
+                     <label for="sofreuAlgumTipoDeQueda">Sofreu algum tipo de queda  ?</label>
+                     <input type="text" id="sofreuAlgumTipoDeQueda" placeholder="Digite a Causa do Defeito..." required value="Não">
+
+                    </div>
+ 
+
+                </div>
+              
+
+
+
+
+                
+
+                
+
+        
+                <div class="input-grupo">
+                    <button type="submit" onclick="chamado();">Seguir</button>
+                    <button type="reset" onclick="reset();">Limpar</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+<script src="./FileSaver.js"></script>
+<script src="./REQ.js"></script>
+<script src="./chamadoREQ.js"></script>
+</html>
