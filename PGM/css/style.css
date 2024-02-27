@@ -107,3 +107,8 @@ select:hover {
 .btn-action:nth-child(2) {
   background-color: rgba(237, 42, 42, 0.9);
 }
+@media (max-width:1500px) {
+  .btn-action {
+    padding: 1px;
+  }
+}
