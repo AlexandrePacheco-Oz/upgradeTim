@@ -22,7 +22,7 @@ const dataFinalFormatada = new Intl.DateTimeFormat("pt-BR").format(dataFinal);
 
 
 
-document.getElementById("resposta").innerHTML =  "Agendado com o colaborador " + nome + " para atendimento presencial em " + local + " no dia " + dataFinalFormatada  + " às " + hora + "hs." + "<br>Chamado Cervello: "  +  cervelo + " <br>Chamado Tim: " + chamadoTim;
+document.getElementById("resposta").innerHTML =  "Agendado com o colaborador " + nome + " para atendimento presencial em " + local + " no dia " + dataFinalFormatada  + " às " + hora + "hs." + "<br>Chamado Zendesk: "  +  cervelo + " <br>Chamado Tim: " + chamadoTim;
 
 document.getElementById("resposta2").innerHTML =  "Efetuado contato com " + nome + " "+ "Telefone: " + Telefone + ", onde solicita o atendimento conforme agendamento abaixo." +  "<br><br>Coordenador Luis Delfino" + "<br><br>Data atendimento: " + dataFinalFormatada+ "<br>Horário para atendimento: " + hora + "hs" + "<br>Empresa: Tim" + "<br>Nome: " + nome
 + "<br>Endereço: " + local + "<br>Telefone: " + Telefone + "<br>Equipamento/patrimônio: " + patrimonio + "<br>Descrição do problema: " + descricao;  
